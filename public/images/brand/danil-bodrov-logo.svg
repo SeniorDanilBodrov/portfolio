@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Danil Bodrov AI logo</title>
+  <desc id="desc">Abstract DB monogram built from a data node, a model curve and an arrow toward deployment.</desc>
+  <rect width="512" height="512" rx="118" fill="#1B1C1D"/>
+  <path d="M112 122H222C278 122 314 149 314 195C314 216 306 235 291 248C316 262 330 284 330 314C330 364 288 390 226 390H112V122Z" fill="#C6F04D"/>
+  <path d="M166 173V339H220C254 339 274 327 274 309C274 288 254 279 221 279H166V229H218C245 229 261 219 261 201C261 183 244 173 217 173H166Z" fill="#1B1C1D"/>
+  <path d="M357 111L414 111L414 168" stroke="#C6F04D" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M409 116C376 140 354 172 346 210C339 246 345 280 364 307C378 327 394 345 414 360" stroke="#C6F04D" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="347" cy="210" r="12" fill="#B9D8FF"/>
+  <circle cx="365" cy="307" r="12" fill="#FF734D"/>
+</svg>
