@@ -734,8 +734,11 @@ em { font-style: normal; color: var(--lime-deep); }
   gap: 20px;
   border-top: 1px solid #bdc2b8;
   padding: 24px 0;
+  transition: padding-left var(--t) var(--ease);
 }
-.edu-list article > span { font: 11px var(--font-mono); color: #75863f; padding-top: 5px; }
+.edu-list article:hover { padding-left: 8px; }
+.edu-list article > span { font: 11px var(--font-mono); color: #75863f; padding-top: 5px; transition: color var(--t) var(--ease); }
+.edu-list article:hover > span { color: #4f5c28; }
 .edu-list h3 { font-size: 22px; margin: 0 0 7px; }
 .edu-list p { font-size: 13px; color: #62655f; line-height: 1.65; }
 .edu-links { display: flex; flex-wrap: wrap; gap: 8px 18px; font: 11px var(--font-mono); margin-top: 12px; }
