@@ -644,6 +644,14 @@ em { font-style: normal; color: var(--lime-deep); }
 .extra-project > img { object-fit: contain; padding: 14px; }
 .extra-license { background: var(--blue); }
 .extra-license > img { background: #dfe8f2; }
+/* Detect Number — как BubbleScope: текст сверху, изображение снизу на всю ширину,
+   родной аспект 1280×967 — без искажений и лишнего воздуха */
+.extra-license { grid-template-columns: 1fr; }
+.extra-license > img {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 1280 / 967;
+}
 .extra-bubbles { background: #1b1c1d; color: #fff; }
 .extra-bubbles .project-meta, .extra-bubbles p { color: #aab3ac; }
 /* Кадр 780×600 должен быть виден целиком: складываем карточку в колонку,
@@ -903,6 +911,7 @@ em { font-style: normal; color: var(--lime-deep); }
     object-fit: cover;
   }
   .extra-bubbles > .extra-media { height: auto; aspect-ratio: 780 / 600; }
+  .extra-license > img { height: auto; aspect-ratio: 1280 / 967; }
   .extra-project > img { object-fit: cover; padding: 0; }
 
   .visual-metric { left: 8%; right: 8%; width: auto; top: 24%; padding: 18px 20px; }
