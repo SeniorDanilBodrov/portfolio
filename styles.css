@@ -646,6 +646,15 @@ em { font-style: normal; color: var(--lime-deep); }
 .extra-license > img { background: #dfe8f2; }
 .extra-bubbles { background: #1b1c1d; color: #fff; }
 .extra-bubbles .project-meta, .extra-bubbles p { color: #aab3ac; }
+/* Кадр 780×600 должен быть виден целиком: складываем карточку в колонку,
+   видео получает ширину карточки и родной аспект — без обрезки object-fit: cover */
+.extra-bubbles { grid-template-columns: 1fr; }
+.extra-bubbles > .extra-media {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 780 / 600;
+  object-fit: cover;
+}
 .extra-bubbles .project-subtitle { color: var(--lime); }
 .extra-bubbles .tags span { border-color: #718177; }
 .extra-bubbles .text-link { color: var(--lime); }
@@ -893,6 +902,7 @@ em { font-style: normal; color: var(--lime-deep); }
     height: clamp(200px, 58vw, 280px);
     object-fit: cover;
   }
+  .extra-bubbles > .extra-media { height: auto; aspect-ratio: 780 / 600; }
   .extra-project > img { object-fit: cover; padding: 0; }
 
   .visual-metric { left: 8%; right: 8%; width: auto; top: 24%; padding: 18px 20px; }
