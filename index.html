@@ -2,39 +2,91 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Портфолио Данила Бодрова — AI/ML-инженера. Computer Vision, Python, API и автоматизация процессов от данных до пилота." />
+    <meta name="theme-color" content="#f5f4ef" />
+    <link rel="canonical" href="https://seniordanilbodrov.github.io/portfolio/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://seniordanilbodrov.github.io/portfolio/" />
+    <meta property="og:site_name" content="Данил Бодров — AI / ML Engineer" />
     <meta property="og:title" content="Данил Бодров — AI / ML Engineer" />
     <meta property="og:description" content="Прикладные AI-решения: от Computer Vision и данных до API, интеграций и MVP." />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Данил Бодров — AI / ML Engineer" />
+    <meta name="twitter:description" content="Прикладные AI-решения: от Computer Vision и данных до API, интеграций и MVP." />
+
     <title>Данил Бодров — AI / ML Engineer</title>
-    <link rel="icon" href="public/images/brand/danil-bodrov-logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="public/images/brand/danil-bodrov-logo.svg" />
+
+    <!-- Шрифты: preconnect + неблокирующая загрузка вместо @import в CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" />
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Данил Бодров",
+      "jobTitle": "AI / ML Engineer",
+      "url": "https://seniordanilbodrov.github.io/portfolio/",
+      "email": "mailto:bodrov7700@mail.ru",
+      "sameAs": ["https://github.com/SeniorDanilBodrov"],
+      "address": { "@type": "PostalAddress", "addressLocality": "Екатеринбург", "addressCountry": "RU" },
+      "knowsAbout": ["Computer Vision", "Machine Learning", "Python", "FastAPI", "Object Detection"]
+    }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
-    <header class="site-header">
+
+    <header class="site-header" id="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="#top" aria-label="На главную"><img src="public/images/brand/danil-bodrov-logo.svg" alt="DB" /><small>AI / ML</small></a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Меню</button>
+        <a class="brand" href="#top" aria-label="На главную">
+          <img src="public/images/brand/danil-bodrov-logo.svg" alt="DB" width="36" height="36" />
+          <small>AI / ML</small>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
         <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
-          <a href="#about">Обо мне</a><a href="#projects">Кейсы</a><a href="#process">Подход</a><a href="#experience">Опыт</a><a href="#contact">Контакты</a>
+          <a href="#about">Обо мне</a>
+          <a href="#projects">Кейсы</a>
+          <a href="#process">Подход</a>
+          <a href="#experience">Опыт</a>
+          <a href="#contact">Контакты</a>
         </nav>
       </div>
     </header>
 
     <main id="main">
+
+      <!-- ================= HERO ================= -->
       <section id="top" class="hero section-pad">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="pulse"></span> Екатеринбург · открыт к проектам</p>
+            <p class="eyebrow"><span class="pulse"></span>Екатеринбург · открыт к проектам</p>
             <h1>AI-инженер,<br /><em>который доводит</em><br />модели до работы.</h1>
             <p class="hero-lead">Проектирую прикладные AI-решения для автоматизации процессов: от данных и Computer Vision до API, интеграций и пилота.</p>
-            <div class="hero-actions"><a class="button button-primary" href="#projects">Смотреть кейсы <span>↘</span></a><a class="button button-ghost" href="public/documents/danil-bodrov-ai-ml-engineer-cv.pdf" target="_blank" rel="noreferrer">Открыть резюме ↗</a></div>
-            <div class="hero-stats"><div><strong>3+</strong><span>года в IT</span></div><div><strong>95%+</strong><span>сходимость ZMetrics</span></div><div><strong>80%</strong><span>экономии времени</span></div></div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Смотреть кейсы <span aria-hidden="true">↘</span></a>
+              <a class="button button-ghost" href="public/documents/danil-bodrov-ai-ml-engineer-cv.pdf" target="_blank" rel="noreferrer">Открыть резюме <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-stats">
+              <div><strong>3+</strong><span>года в IT</span></div>
+              <div><strong>95%+</strong><span>сходимость ZMetrics</span></div>
+              <div><strong>80%</strong><span>экономии времени</span></div>
+            </div>
           </div>
-          <div class="hero-art" aria-label="Схема пути от данных к решению">
-            <div class="hero-photo"><img src="public/images/profile/danil-bodrov.jpg" alt="Данил Бодров" /><span>AI / ML<br />ENGINEER</span></div>
-            <div class="art-grid"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="hero-art" role="img" aria-label="Схема пути от данных к решению">
+            <div class="art-grid" aria-hidden="true"></div>
+            <div class="art-orbit orbit-one" aria-hidden="true"></div>
+            <div class="art-orbit orbit-two" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="public/images/profile/danil-bodrov.jpg" alt="Данил Бодров" width="153" height="153" fetchpriority="high" decoding="async" />
+              <span>AI / ML<br />ENGINEER</span>
+            </div>
             <div class="art-node node-data"><span>01</span><b>Данные</b><small>собрать · очистить</small></div>
             <div class="art-node node-model"><span>02</span><b>Модель</b><small>обучить · проверить</small></div>
             <div class="art-node node-api"><span>03</span><b>API / MVP</b><small>встроить · измерить</small></div>
@@ -43,32 +95,322 @@
         </div>
       </section>
 
+      <!-- ================= 01 ПОЗИЦИОНИРОВАНИЕ ================= -->
       <section id="about" class="section-pad section-light">
-        <div class="container split-heading"><div><p class="eyebrow">01 / Позиционирование</p><h2>Не просто модель.<br /><em>Рабочий контур.</em></h2></div><p class="section-intro">Мне интересно превращать неопределённую бизнес-задачу в понятный, проверяемый и полезный инструмент — с метрикой успеха, интеграцией и обратной связью от пользователей.</p></div>
-        <div class="container relevance-grid"><article><span class="card-index">01</span><h3>Автоматизация процессов</h3><p>Нахожу повторяющиеся операции, формулирую гипотезу и собираю пилот, который можно проверить на реальных данных.</p></article><article><span class="card-index">02</span><h3>Computer Vision</h3><p>От датасета и обучения до сегментации, object detection, inference и понятного результата для специалиста.</p></article><article><span class="card-index">03</span><h3>Интеграции и API</h3><p>Связываю ML-модуль с backend, ботом, внешними сервисами и пользовательским сценарием.</p></article><article><span class="card-index">04</span><h3>Полный цикл</h3><p>Архитектура, MVP, пилот, измерение эффекта и следующая итерация — в одной зоне ответственности.</p></article></div>
+        <div class="container split-heading">
+          <div>
+            <p class="eyebrow">01 / Позиционирование</p>
+            <h2>Не просто модель.<br /><em>Рабочий контур.</em></h2>
+          </div>
+          <p class="section-intro">Мне интересно превращать неопределённую бизнес-задачу в понятный, проверяемый и полезный инструмент — с метрикой успеха, интеграцией и обратной связью от пользователей.</p>
+        </div>
+        <div class="container relevance-grid">
+          <article><span class="card-index">01</span><h3>Автоматизация процессов</h3><p>Нахожу повторяющиеся операции, формулирую гипотезу и собираю пилот, который можно проверить на реальных данных.</p></article>
+          <article><span class="card-index">02</span><h3>Computer Vision</h3><p>От датасета и обучения до сегментации, object detection, inference и понятного результата для специалиста.</p></article>
+          <article><span class="card-index">03</span><h3>Интеграции и API</h3><p>Связываю ML-модуль с backend, ботом, внешними сервисами и пользовательским сценарием.</p></article>
+          <article><span class="card-index">04</span><h3>Полный цикл</h3><p>Архитектура, MVP, пилот, измерение эффекта и следующая итерация — в одной зоне ответственности.</p></article>
+        </div>
       </section>
 
-      <section id="projects" class="section-pad projects-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 / Избранные кейсы</p><h2>Проекты, где AI<br /><em>встречается с задачей.</em></h2></div><p>Кейсы собраны вокруг результата: что болело, что было сделано и как понять, что решение работает.</p></div>
-        <div class="project-feature"><div class="feature-copy"><div class="project-meta"><span>01</span><span>Стартап · 2025 — н.в.</span></div><h3>ZMetrics</h3><p class="feature-title">Компьютерное зрение для анализа гранулометрического состава горной массы.</p><p>Спроектировал ML/AI-систему на базе SAM3 и стереоглубины: она принимает изображения и видеопоток, сегментирует фрагменты, оценивает размер частиц и формирует отчёт для производственного сценария.</p><div class="tags"><span>Python</span><span>SAM3</span><span>OpenCV</span><span>FastAPI</span><span>PyTorch / TF</span><span>Docker</span></div><a class="text-link" href="#zmetrics-evidence">Смотреть доказательства <span>↘</span></a></div><div class="feature-visual"><div class="visual-label">REAL CV PIPELINE</div><div class="visual-metric"><small>P80 / size estimate</small><strong>294<span>mm</span></strong><i></i><div class="metric-line"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div></div><div class="visual-foot">SAM3 segmentation <span>+</span> stereo depth</div></div></div>
-        <article class="foodsource-feature"><div class="foodsource-copy"><div class="project-meta"><span>02</span><span>Full-stack AI MVP · 2026</span></div><h3>FoodSource</h3><p class="feature-title">Гибридный поиск поставщиков для food-закупок.</p><p>Разработал сервис, который понимает запрос обычным языком, находит релевантных поставщиков и объясняет каждое совпадение. FastAPI и SQLite хранят каталог, избранное, статусы и заметки; правила, RapidFuzz, морфология и rubert-tiny2 ранжируют выдачу. Парсер обновляет публичные данные с контролем качества, а итоговая выборка выгружается в XLSX.</p><div class="foodsource-proof"><span><b>30</b> проверенных поставщиков</span><span><b>AI</b> объяснимое ранжирование</span></div><div class="tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>rubert-tiny2</span><span>ONNX</span><span>Парсер</span><span>XLSX</span></div><div class="foodsource-links"><a class="text-link" href="https://seniordanilbodrov.github.io/foodsource/" target="_blank" rel="noreferrer">Открыть сервис <span>↗</span></a><a class="text-link" href="https://github.com/SeniorDanilBodrov/foodsource" target="_blank" rel="noreferrer">Код и архитектура <span>↗</span></a></div></div><div class="foodsource-visual"><div class="foodsource-browser" aria-label="Видео-демонстрация интерфейса FoodSource"><div class="foodsource-browser-bar"><i></i><i></i><i></i><span>foodsource / live demo</span></div><video autoplay muted loop playsinline preload="metadata" poster="public/video/foodsource.gif"><source src="public/video/foodsource.mp4" type="video/mp4" /><img src="public/video/foodsource.gif" alt="Интерфейс сервиса FoodSource с каталогом поставщиков" /></video></div><span class="foodsource-caption">HYBRID AI SEARCH · FASTAPI · SQLITE</span></div></article>
-        <div class="project-grid"><article class="project-card card-lime"><div class="project-meta"><span>03</span><span>LABA.DA · 2026</span></div><h3>AI-автоматизация<br />контента</h3><p>Пайплайн от генерации изображений до публикации каруселей через Telegram-ботов и API Instagram.</p><div class="card-result"><strong>80%</strong><span>сокращение времени подготовки</span></div><div class="tags"><span>Python</span><span>Telegram API</span><span>REST</span></div></article><article class="project-card card-dark"><div class="project-meta"><span>04</span><span>LABA.DA · CV module</span></div><h3>Распознавание<br />покерных фишек</h3><p>Object detection в реальном времени, подсчёт баланса игроков и мгновенное отображение результата на экране.</p><a class="media-link" href="#poker-demo">Открыть демо <span>↘</span></a><div class="card-chip">CV<br /><b>LIVE</b></div></article><article class="project-card card-paper"><div class="project-meta"><span>05</span><span>СВЭЛ · 2023</span></div><h3>Данные для<br />решений</h3><p>Парсеры, очистка и отчётность, которые заменили ручную работу с таблицами и ускорили аналитику.</p><div class="tags"><span>pandas</span><span>BeautifulSoup</span><span>Excel</span></div></article></div>
-      </div></section>
+      <!-- ================= 02 ИЗБРАННЫЕ КЕЙСЫ ================= -->
+      <section id="projects" class="section-pad projects-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / Избранные кейсы</p>
+              <h2>Проекты, где AI<br /><em>встречается с задачей.</em></h2>
+            </div>
+            <p>Кейсы собраны вокруг результата: что болело, что было сделано и как понять, что решение работает.</p>
+          </div>
 
-      <section class="section-pad extra-projects"><div class="container"><div class="section-heading"><div><p class="eyebrow">03 / Дополнительные проекты</p><h2>Ещё два<br /><em>CV-сценария.</em></h2></div><p>Учебные и исследовательские проекты, которые показывают широту работы с изображениями, видео и предметной областью.</p></div><div class="extra-project-grid"><article class="extra-project extra-license"><div class="extra-copy"><div class="project-meta"><span>06</span><span>Учебный проект · YOLO + OCR</span></div><h3>Detect Number</h3><p>Распознавание автомобильных номеров: детекция автомобиля и номерного знака, выделение области и OCR-распознавание текста.</p><div class="tags"><span>YOLO</span><span>OCR</span><span>Computer Vision</span></div><a class="text-link" href="public/images/projects/license-plate-detection.jpg" target="_blank" rel="noreferrer">Открыть результат ↗</a></div><img src="public/images/projects/license-plate-detection.jpg" alt="Результат детекции автомобиля и номерного знака E927CY763" /></article><article class="extra-project extra-bubbles"><div class="extra-copy"><div class="project-meta"><span>07</span><span>Исследовательский проект · video analytics</span></div><h3>BubbleScope</h3><p class="project-subtitle">CV-анализ пузырьковой структуры флотации</p><p>Отслеживание пузырьков воздуха в камере флотационной машины с использованием SAM3, подсчёт объектов по классам крупности и сравнение режимов аэрации.</p><div class="tags"><span>SAM3</span><span>Object tracking</span><span>Video analytics</span><span>Data analysis</span></div><a class="text-link" href="public/video/flotation-bubble-tracking.mp4" target="_blank" rel="noreferrer">Открыть видео ↗</a></div><img src="public/video/flotation-bubble-tracking.gif" alt="Анимация отслеживания пузырьков воздуха во флотационной камере" /></article></div></div></section>
+          <div class="project-feature">
+            <div class="feature-copy">
+              <div class="project-meta"><span>01</span><span>Стартап · 2025 — н.в.</span></div>
+              <h3>ZMetrics</h3>
+              <p class="feature-title">Компьютерное зрение для анализа гранулометрического состава горной массы.</p>
+              <p>Спроектировал ML/AI-систему на базе SAM3 и стереоглубины: она принимает изображения и видеопоток, сегментирует фрагменты, оценивает размер частиц и формирует отчёт для производственного сценария.</p>
+              <div class="tags"><span>Python</span><span>SAM3</span><span>OpenCV</span><span>FastAPI</span><span>PyTorch / TF</span><span>Docker</span></div>
+              <a class="text-link" href="#zmetrics-evidence">Смотреть доказательства <span aria-hidden="true">↘</span></a>
+            </div>
+            <div class="feature-visual">
+              <div class="visual-label">REAL CV PIPELINE</div>
+              <div class="visual-metric">
+                <small>P80 / size estimate</small>
+                <strong>294<span>mm</span></strong>
+                <i></i>
+                <div class="metric-line"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+              </div>
+              <div class="visual-foot">SAM3 segmentation <span>+</span> stereo depth</div>
+            </div>
+          </div>
 
-      <section id="zmetrics-evidence" class="section-pad evidence-section section-light"><div class="container"><div class="section-heading"><div><p class="eyebrow">04 / Верификация</p><h2>Результат подтверждён<br /><em>в полевых условиях.</em></h2></div><p>Для ZMetrics есть не только технический отчёт, но и внешняя проверка на реальных пробах и карьерном объекте.</p></div><div class="evidence-grid"><article><span class="evidence-number">95%+</span><h3>Лабораторная сходимость</h3><p>Независимая «УралГеоАналитика» сопоставила гранулометрический состав проб с результатами программы. Средняя сходимость в приложенной таблице — 97%.</p><a class="text-link" href="public/documents/zmetrics-lab-validation.pdf" target="_blank" rel="noreferrer">Открыть письмо ↗</a></article><article><span class="evidence-number">~90%</span><h3>Полевые испытания</h3><p>На Полдневском карьере система показала точность около 90%, а результаты обработки стали доступны ориентировочно в течение минуты.</p><a class="text-link" href="public/documents/zmetrics-field-pilot.pdf" target="_blank" rel="noreferrer">Открыть отзыв ↗</a></article><article><span class="evidence-number">P80</span><h3>Измеримый отчёт</h3><p>Технический отчёт содержит P10, P50, P80, график гранулометрического состава, confidence и рекомендации для следующей проверки.</p><a class="text-link" href="public/documents/zmetrics-technical-report.pdf" target="_blank" rel="noreferrer">Открыть отчёт ↗</a></article></div></div></section>
+          <article class="foodsource-feature">
+            <div class="foodsource-copy">
+              <div class="project-meta"><span>02</span><span>Full-stack AI MVP · 2026</span></div>
+              <h3>FoodSource</h3>
+              <p class="feature-title">Гибридный поиск поставщиков для food-закупок.</p>
+              <p>Разработал сервис, который понимает запрос обычным языком, находит релевантных поставщиков и объясняет каждое совпадение. FastAPI и SQLite хранят каталог, избранное, статусы и заметки; правила, RapidFuzz, морфология и rubert-tiny2 ранжируют выдачу. Парсер обновляет публичные данные с контролем качества, а итоговая выборка выгружается в XLSX.</p>
+              <div class="foodsource-proof">
+                <span><b>30</b>проверенных поставщиков</span>
+                <span><b>AI</b>объяснимое ранжирование</span>
+              </div>
+              <div class="tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>rubert-tiny2</span><span>ONNX</span><span>Парсер</span><span>XLSX</span></div>
+              <div class="foodsource-links">
+                <a class="text-link" href="https://seniordanilbodrov.github.io/foodsource/" target="_blank" rel="noreferrer">Открыть сервис <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/SeniorDanilBodrov/foodsource" target="_blank" rel="noreferrer">Код и архитектура <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="foodsource-visual">
+              <div class="foodsource-browser" aria-label="Видео-демонстрация интерфейса FoodSource">
+                <div class="foodsource-browser-bar"><i></i><i></i><i></i><span>foodsource / live demo</span></div>
+                <video data-autoplay muted loop playsinline preload="none" poster="public/video/foodsource-poster.webp" width="960" height="510">
+                  <source src="public/video/foodsource.mp4" type="video/mp4" />
+                  Ваш браузер не поддерживает видео.
+                </video>
+              </div>
+              <span class="foodsource-caption">HYBRID AI SEARCH · FASTAPI · SQLITE</span>
+            </div>
+          </article>
 
-      <section id="process" class="section-pad process-section"><div class="container process-wrap"><div><p class="eyebrow">04 / Как я работаю</p><h2>От вопроса<br />до <em>пилота.</em></h2><p class="section-intro">Понятный процесс помогает не потерять бизнес-смысл за стеком технологий.</p></div><ol class="process-list"><li><span>01</span><div><h3>Разобраться в операции</h3><p>Кто пользователь, где ручной труд, какая ошибка действительно стоит денег.</p></div></li><li><span>02</span><div><h3>Сформулировать метрику</h3><p>Что меняем: время, точность, стоимость, пропускную способность или качество решения.</p></div></li><li><span>03</span><div><h3>Собрать MVP</h3><p>Данные, модель, API и минимальный интерфейс в одном проверяемом контуре.</p></div></li><li><span>04</span><div><h3>Провести пилот</h3><p>Собрать обратную связь, измерить эффект и определить следующую итерацию.</p></div></li></ol></div></section>
+          <div class="project-grid">
+            <article class="project-card card-lime">
+              <div class="project-meta"><span>03</span><span>LABA.DA · 2026</span></div>
+              <h3>AI-автоматизация<br />контента</h3>
+              <p>Пайплайн от генерации изображений до публикации каруселей через Telegram-ботов и API Instagram.</p>
+              <div class="card-result"><strong>80%</strong><span>сокращение времени подготовки</span></div>
+              <div class="tags"><span>Python</span><span>Telegram API</span><span>REST</span></div>
+            </article>
+            <article class="project-card card-dark">
+              <div class="project-meta"><span>04</span><span>LABA.DA · CV module</span></div>
+              <h3>Распознавание<br />покерных фишек</h3>
+              <p>Object detection в реальном времени, подсчёт баланса игроков и мгновенное отображение результата на экране.</p>
+              <a class="media-link" href="#poker-demo">Открыть демо <span aria-hidden="true">↘</span></a>
+              <div class="card-chip">CV<br /><b>LIVE</b></div>
+            </article>
+            <article class="project-card card-paper">
+              <div class="project-meta"><span>05</span><span>СВЭЛ · 2023</span></div>
+              <h3>Данные для<br />решений</h3>
+              <p>Парсеры, очистка и отчётность, которые заменили ручную работу с таблицами и ускорили аналитику.</p>
+              <div class="tags"><span>pandas</span><span>BeautifulSoup</span><span>Excel</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-      <section id="poker-demo" class="section-pad demo-section section-light"><div class="container demo-grid"><div><p class="eyebrow">05 / Демо</p><h2>Покерные фишки<br /><em>в реальном времени.</em></h2><p class="section-intro">CV-модуль распознаёт объекты, считает фишки и выводит текущий баланс игрока на экран.</p><div class="tags"><span>Object detection</span><span>OpenCV</span><span>Real-time display</span></div></div><div class="video-shell"><video controls muted playsinline preload="metadata" poster="public/video/poker-chips-cv-demo-compact.gif"><source src="public/video/poker-chips-cv-demo.mp4" type="video/mp4" />Ваш браузер не поддерживает видео.</video><p>Видео-демо · 30 секунд <a href="public/video/poker-chips-cv-demo-compact.gif" target="_blank" rel="noreferrer">GIF-превью ↗</a></p></div></div></section>
+      <!-- ================= 03 ДОПОЛНИТЕЛЬНЫЕ ПРОЕКТЫ ================= -->
+      <section class="section-pad extra-projects">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 / Дополнительные проекты</p>
+              <h2>Ещё два<br /><em>CV-сценария.</em></h2>
+            </div>
+            <p>Учебные и исследовательские проекты, которые показывают широту работы с изображениями, видео и предметной областью.</p>
+          </div>
+          <div class="extra-project-grid">
+            <article class="extra-project extra-license">
+              <div class="extra-copy">
+                <div class="project-meta"><span>06</span><span>Учебный проект · YOLO + OCR</span></div>
+                <h3>Detect Number</h3>
+                <p>Распознавание автомобильных номеров: детекция автомобиля и номерного знака, выделение области и OCR-распознавание текста.</p>
+                <div class="tags"><span>YOLO</span><span>OCR</span><span>Computer Vision</span></div>
+                <a class="text-link" href="public/images/projects/license-plate-detection.jpg" target="_blank" rel="noreferrer">Открыть результат <span aria-hidden="true">↗</span></a>
+              </div>
+              <img src="public/images/projects/license-plate-detection.jpg" alt="Результат детекции автомобиля и номерного знака E927CY763" width="1280" height="967" loading="lazy" decoding="async" />
+            </article>
+            <article class="extra-project extra-bubbles">
+              <div class="extra-copy">
+                <div class="project-meta"><span>07</span><span>Исследовательский проект · video analytics</span></div>
+                <h3>BubbleScope</h3>
+                <p class="project-subtitle">CV-анализ пузырьковой структуры флотации</p>
+                <p>Отслеживание пузырьков воздуха в камере флотационной машины с использованием SAM3, подсчёт объектов по классам крупности и сравнение режимов аэрации.</p>
+                <div class="tags"><span>SAM3</span><span>Object tracking</span><span>Video analytics</span><span>Data analysis</span></div>
+                <a class="text-link" href="public/video/flotation-bubble-tracking.mp4" target="_blank" rel="noreferrer">Открыть видео <span aria-hidden="true">↗</span></a>
+              </div>
+              <!-- GIF 2.2 МБ заменён на MP4 748 КБ с WebP-постером: грузится только при попадании в экран -->
+              <video class="extra-media" data-autoplay muted loop playsinline preload="none" poster="public/video/flotation-poster.webp" width="780" height="600" aria-label="Анимация отслеживания пузырьков воздуха во флотационной камере">
+                <source src="public/video/flotation-bubble-tracking.mp4" type="video/mp4" />
+              </video>
+            </article>
+          </div>
+        </div>
+      </section>
 
-      <section id="experience" class="section-pad experience-section"><div class="container experience-grid"><div><p class="eyebrow">06 / Опыт</p><h2>Опыт, собранный<br /><em>в полный цикл.</em></h2></div><div class="timeline"><article><div class="time">09.2025 — н.в.</div><div><h3>Стартап · Основатель / Инженер-разработчик</h3><p>Архитектура ML/AI-системы ZMetrics, модели CV, датасеты, backend, API, MVP и пилоты.</p><div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span></div></div></article><article><div class="time">05.2026 — 08.2026</div><div><h3>LABA.DA · ML-инженер</h3><p>Генеративные модели, Telegram-боты, API соцсетей, очереди задач, CV-модуль и мониторинг метрик.</p></div></article><article><div class="time">11.2024 — 12.2025</div><div><h3>IT pro · Web-разработчик</h3><p>Bitrix, CRM, платежи, ERP и внешние API; оптимизация и сопровождение веб-продуктов.</p></div></article><article><div class="time">06.2023 — 12.2023</div><div><h3>Группа СВЭЛ · Бизнес-аналитик</h3><p>Парсинг, подготовка данных, автоматизация отчётности и визуализация для руководства.</p><a class="text-link" href="public/documents/recommendation-svel.pdf" target="_blank" rel="noreferrer">Рекомендательное письмо ↗</a></div></article></div></div></section>
+      <!-- ================= 04 ВЕРИФИКАЦИЯ ================= -->
+      <section id="zmetrics-evidence" class="section-pad evidence-section section-light">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">04 / Верификация</p>
+              <h2>Результат подтверждён<br /><em>в полевых условиях.</em></h2>
+            </div>
+            <p>Для ZMetrics есть не только технический отчёт, но и внешняя проверка на реальных пробах и карьерном объекте.</p>
+          </div>
+          <div class="evidence-grid">
+            <article>
+              <span class="evidence-number">95%+</span>
+              <h3>Лабораторная сходимость</h3>
+              <p>Независимая «УралГеоАналитика» сопоставила гранулометрический состав проб с результатами программы. Средняя сходимость в приложенной таблице — 97%.</p>
+              <a class="text-link" href="public/documents/zmetrics-lab-validation.pdf" target="_blank" rel="noreferrer">Открыть письмо <span aria-hidden="true">↗</span></a>
+            </article>
+            <article>
+              <span class="evidence-number">~90%</span>
+              <h3>Полевые испытания</h3>
+              <p>На Полдневском карьере система показала точность около 90%, а результаты обработки стали доступны ориентировочно в течение минуты.</p>
+              <a class="text-link" href="public/documents/zmetrics-field-pilot.pdf" target="_blank" rel="noreferrer">Открыть отзыв <span aria-hidden="true">↗</span></a>
+            </article>
+            <article>
+              <span class="evidence-number">P80</span>
+              <h3>Измеримый отчёт</h3>
+              <p>Технический отчёт содержит P10, P50, P80, график гранулометрического состава, confidence и рекомендации для следующей проверки.</p>
+              <a class="text-link" href="public/documents/zmetrics-technical-report.pdf" target="_blank" rel="noreferrer">Открыть отчёт <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
 
-      <section class="section-pad education-section section-light"><div class="container education-grid"><div><p class="eyebrow">07 / Образование</p><h2>Фундамент +<br /><em>прикладной фокус.</em></h2></div><div class="edu-list"><article><span>2022–2026</span><div><h3>УГГУ</h3><p><b>Профиль:</b> Автоматизация и управление бизнес процессами<br /><b>Специальность:</b> Информатика и вычислительная техника<br />Высшее образование · окончил в 2026 году</p></div></article><article><span>2023–2024</span><div><h3>Computer Vision Engineer · Applied AI</h3><p>Профильные программы Университета Иннополис, ИТМО и УГГУ</p><div class="edu-links"><a href="public/documents/certificate-applied-ai-frontiers.pdf" target="_blank" rel="noreferrer">Сертификат «Фронтиры ИИ» ↗</a><a href="public/documents/ml-test-2023.pdf" target="_blank" rel="noreferrer">ML-тест · 100% ↗</a></div></div></article><article><span>2024–2025</span><div><h3>Достижения</h3><p>Победитель программы «Студенческий стартап», III место во всероссийском конкурсе научных работ.</p><div class="edu-links"><a href="public/documents/award-student-startup-2025.pdf" target="_blank" rel="noreferrer">Диплом ↗</a><a href="public/documents/award-transport-innovation-2024.pdf" target="_blank" rel="noreferrer">Награда ↗</a></div></div></article></div></div></section>
+      <!-- ================= 04 / КАК Я РАБОТАЮ ================= -->
+      <section id="process" class="section-pad process-section">
+        <div class="container process-wrap">
+          <div>
+            <p class="eyebrow">04 / Как я работаю</p>
+            <h2>От вопроса<br />до <em>пилота.</em></h2>
+            <p class="section-intro">Понятный процесс помогает не потерять бизнес-смысл за стеком технологий.</p>
+          </div>
+          <ol class="process-list">
+            <li><span>01</span><div><h3>Разобраться в операции</h3><p>Кто пользователь, где ручной труд, какая ошибка действительно стоит денег.</p></div></li>
+            <li><span>02</span><div><h3>Сформулировать метрику</h3><p>Что меняем: время, точность, стоимость, пропускную способность или качество решения.</p></div></li>
+            <li><span>03</span><div><h3>Собрать MVP</h3><p>Данные, модель, API и минимальный интерфейс в одном проверяемом контуре.</p></div></li>
+            <li><span>04</span><div><h3>Провести пилот</h3><p>Собрать обратную связь, измерить эффект и определить следующую итерацию.</p></div></li>
+          </ol>
+        </div>
+      </section>
 
-      <section id="contact" class="contact-section"><div class="container contact-wrap"><p class="eyebrow">08 / Контакты</p><h2>Есть процесс,<br /><em>который пора улучшить?</em></h2><p>Расскажите о задаче — обсудим, где AI действительно принесёт пользу.</p><a class="button button-primary" href="mailto:bodrov7700@mail.ru">Написать на email <span>↗</span></a><div class="contact-meta"><span>Екатеринбург · Россия</span><a href="mailto:bodrov7700@mail.ru">bodrov7700@mail.ru</a><span>English B2</span></div></div></section>
+      <!-- ================= 05 / ДЕМО ================= -->
+      <section id="poker-demo" class="section-pad demo-section section-light">
+        <div class="container demo-grid">
+          <div>
+            <p class="eyebrow">05 / Демо</p>
+            <h2>Покерные фишки<br /><em>в реальном времени.</em></h2>
+            <p class="section-intro">CV-модуль распознаёт объекты, считает фишки и выводит текущий баланс игрока на экран.</p>
+            <div class="tags"><span>Object detection</span><span>OpenCV</span><span>Real-time display</span></div>
+          </div>
+          <div class="video-shell">
+            <video controls muted playsinline preload="none" poster="public/video/poker-poster.webp" width="720" height="720">
+              <source src="public/video/poker-chips-cv-demo.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+            </video>
+            <p>Видео-демо · 30 секунд <a href="public/video/poker-chips-cv-demo.mp4" target="_blank" rel="noreferrer">Открыть видео ↗</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 06 / ОПЫТ ================= -->
+      <section id="experience" class="section-pad experience-section">
+        <div class="container experience-grid">
+          <div>
+            <p class="eyebrow">06 / Опыт</p>
+            <h2>Опыт, собранный<br /><em>в полный цикл.</em></h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <div class="time">09.2025 — н.в.</div>
+              <div>
+                <h3>Стартап · Основатель / Инженер-разработчик</h3>
+                <p>Архитектура ML/AI-системы ZMetrics, модели CV, датасеты, backend, API, MVP и пилоты.</p>
+                <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span></div>
+              </div>
+            </article>
+            <article>
+              <div class="time">05.2026 — 08.2026</div>
+              <div>
+                <h3>LABA.DA · ML-инженер</h3>
+                <p>Генеративные модели, Telegram-боты, API соцсетей, очереди задач, CV-модуль и мониторинг метрик.</p>
+              </div>
+            </article>
+            <article>
+              <div class="time">11.2024 — 12.2025</div>
+              <div>
+                <h3>IT pro · Web-разработчик</h3>
+                <p>Bitrix, CRM, платежи, ERP и внешние API; оптимизация и сопровождение веб-продуктов.</p>
+              </div>
+            </article>
+            <article>
+              <div class="time">06.2023 — 12.2023</div>
+              <div>
+                <h3>Группа СВЭЛ · Бизнес-аналитик</h3>
+                <p>Парсеры, подготовка данных, автоматизация отчётности и визуализация для руководства.</p>
+                <a class="text-link" href="public/documents/recommendation-svel.pdf" target="_blank" rel="noreferrer">Рекомендательное письмо <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 07 / ОБРАЗОВАНИЕ ================= -->
+      <section class="section-pad education-section section-light">
+        <div class="container education-grid">
+          <div>
+            <p class="eyebrow">07 / Образование</p>
+            <h2>Фундамент +<br /><em>прикладной фокус.</em></h2>
+          </div>
+          <div class="edu-list">
+            <article>
+              <span>2022–2026</span>
+              <div>
+                <h3>УГГУ</h3>
+                <p><b>Профиль:</b> Автоматизация и управление бизнес процессами<br /><b>Специальность:</b> Информатика и вычислительная техника<br />Высшее образование · окончил в 2026 году</p>
+              </div>
+            </article>
+            <article>
+              <span>2023–2024</span>
+              <div>
+                <h3>Computer Vision Engineer · Applied AI</h3>
+                <p>Профильные программы Университета Иннополис, ИТМО и УГГУ</p>
+                <div class="edu-links">
+                  <a href="public/documents/certificate-applied-ai-frontiers.pdf" target="_blank" rel="noreferrer">Сертификат «Фронтиры ИИ» ↗</a>
+                  <a href="public/documents/ml-test-2023.pdf" target="_blank" rel="noreferrer">ML-тест · 100% ↗</a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <span>2024–2025</span>
+              <div>
+                <h3>Достижения</h3>
+                <p>Победитель программы «Студенческий стартап», III место во всероссийском конкурсе научных работ.</p>
+                <div class="edu-links">
+                  <a href="public/documents/award-student-startup-2025.pdf" target="_blank" rel="noreferrer">Диплом ↗</a>
+                  <a href="public/documents/award-transport-innovation-2024.pdf" target="_blank" rel="noreferrer">Награда ↗</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 08 / КОНТАКТЫ ================= -->
+      <section id="contact" class="contact-section">
+        <div class="container contact-wrap">
+          <p class="eyebrow">08 / Контакты</p>
+          <h2>Есть процесс,<br /><em>который пора улучшить?</em></h2>
+          <p>Расскажите о задаче — обсудим, где AI действительно принесёт пользу.</p>
+          <a class="button button-primary" href="mailto:bodrov7700@mail.ru">Написать на email <span aria-hidden="true">↗</span></a>
+          <div class="contact-meta">
+            <span>Екатеринбург · Россия</span>
+            <a href="mailto:bodrov7700@mail.ru">bodrov7700@mail.ru</a>
+            <span>English B2</span>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="site-footer"><div class="container"><span>© 2026 Данил Бодров</span></div></footer>
-    <script src="app.js"></script>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© 2026 Данил Бодров</span>
+        <span>AI · CV · Automation</span>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
   </body>
 </html>
